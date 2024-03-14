@@ -1,4 +1,4 @@
-package wildberries.pageObject;
+package wildberries.pageObject.baseComponents;
 
 import framework.BasePage;
 import framework.elements.Button;

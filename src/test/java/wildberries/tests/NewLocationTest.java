@@ -3,7 +3,7 @@ package wildberries.tests;
 import framework.BaseTest;
 import io.qameta.allure.Description;
 import org.testng.annotations.Test;
-import wildberries.pageObject.HeaderPage;
+import wildberries.pageObject.baseComponents.HeaderPage;
 import wildberries.pageObject.NewPoint;
 
 public class NewLocationTest extends BaseTest {

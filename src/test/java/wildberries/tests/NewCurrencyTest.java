@@ -1,10 +1,9 @@
 package wildberries.tests;
 
 import framework.BaseTest;
-import framework.Browser;
 import io.qameta.allure.Description;
 import org.testng.annotations.Test;
-import wildberries.pageObject.*;
+import wildberries.pageObject.baseComponents.HeaderPage;
 
 public class NewCurrencyTest extends BaseTest{
 

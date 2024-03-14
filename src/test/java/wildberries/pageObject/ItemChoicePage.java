@@ -17,7 +17,7 @@ public class ItemChoicePage extends BasePage {
 
     private static final String PAGE_LOCATOR = "//div[@class='catalog']";
     private static final Button filters = new Button(By.xpath("//div[@class='filter-more']"));
-    private static final CheckBox filtersChoice = new CheckBox(By.xpath("//div[@data-id='593']"));
+    private static final CheckBox filtersChoice = new CheckBox(By.xpath("//span[@class='filter__item-in' and text()='Наушники']"));
     private static final Button closeFilters = new Button(By.xpath("//button[@class='filters-sidebar__close']"));
     private static final List<String> PRODUCTS_LIST = getDriver().findElements(By.xpath("//div[@class='product-snippet']"))
             .stream().map(e-> e.getText()).collect(Collectors.toList());
@@ -38,7 +38,7 @@ public class ItemChoicePage extends BasePage {
 
     public  WebElement productSelection() {
         Random random = new Random();
-        int i = random.nextInt(1, PRODUCTS_LIST.size()) - 1; //-1 для того, чтобы НЕ ВЫЙТИ за пределы массива. i-индекс
+        int i = random.nextInt(1, PRODUCTS_LIST.size()) - 1;
         productName = PRODUCTS_LIST.get(i);
         System.out.println("ProductName of Products"+productName);
         productItem = getDriver().findElement(By.xpath(String.format(ITEM, productName)));

@@ -22,12 +22,12 @@ public class WbPage extends BasePage {
     }
 
     public void catalogClick () {
-        catalog.click(); //кликнуть по каталогу
+        catalog.click();
     }
 
     @Step("Chose item")
     public void search () {
-        search.click(); //кликнуть по поиску
+        search.click();
         search.sendKeys("беспроводные наушники");
         searchLabel.click();
     }

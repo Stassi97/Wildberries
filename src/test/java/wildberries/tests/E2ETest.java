@@ -3,17 +3,20 @@ package wildberries.tests;
 import framework.BaseTest;
 import framework.Browser;
 import io.qameta.allure.Description;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import wildberries.pageObject.*;
 import static java.util.Currency.getInstance;
 
 public class E2ETest extends BaseTest {
-    @Description("Wildberries E2ETest")
 
     @Test
-    public void e2eWildberries() {
+    @Description("Wildberries E2ETest")
+    @Parameters({"headphones"})
+
+    public void e2eWildberries(String headphones) {
          WbPage wbPage = new WbPage();
-         wbPage.search();
+         wbPage.search(headphones);
 
          ItemChoicePage choice = new ItemChoicePage();
          choice.chooseFilter();

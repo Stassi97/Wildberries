@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Wildberries-Web-Prod" parallel="methods" thread-count="1">
+<suite name="Wildberries-Web-Prod" parallel="tests" thread-count="1">
+
+    <test name="e2eWildberries">
+        <parameter name="headphones" value="беспроводные наушники"/>
+        <classes>
+            <class name ="wildberries.tests.E2ETest"/>
+        </classes>
+    </test>
 </suite>

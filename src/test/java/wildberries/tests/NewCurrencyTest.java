@@ -12,7 +12,7 @@ public class NewCurrencyTest extends BaseTest{
     @Test
     public void currency(){
         HeaderPage headerPage = new HeaderPage();
-        headerPage.currency();
+        headerPage.currencyClick();
         headerPage.setNewCurrency();
     }
 }

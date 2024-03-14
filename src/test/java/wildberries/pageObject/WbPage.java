@@ -26,9 +26,9 @@ public class WbPage extends BasePage {
     }
 
     @Step("Chose item")
-    public void search () {
+    public void search (String headphones) {
         search.click();
-        search.sendKeys("беспроводные наушники");
+        search.sendKeys(headphones);
         searchLabel.click();
     }
 

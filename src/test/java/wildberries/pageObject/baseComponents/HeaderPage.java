@@ -19,7 +19,7 @@ public class HeaderPage extends BasePage {
         logo.click();
     }
 
-    public void currency () {
+    public void currencyClick () {
         currency.click();
     }
 

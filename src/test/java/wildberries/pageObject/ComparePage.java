@@ -4,7 +4,6 @@ import framework.BasePage;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import static framework.Browser.getDriver;
-import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
 
 public class ComparePage extends BasePage {
@@ -20,12 +19,6 @@ public class ComparePage extends BasePage {
     public void compareProductItem() {
         String itemName = getDriver().findElement(By.xpath(ITEM_NAME)).getText();
         String filterName = getDriver().findElement(By.xpath(FILTER_ITEM_NAME)).getText();
-//        if (itemName.contains(filterName)) {
-//            System.out.println("Name is correct");
-//        } else {
-//            System.out.println("Name is not correct");
-//        }
-
         softAssert.assertTrue(itemName.contains(filterName), "Wrong name");
         softAssert.assertAll();
     }

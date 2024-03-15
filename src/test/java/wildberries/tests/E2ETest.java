@@ -1,12 +1,9 @@
 package wildberries.tests;
 
 import framework.BaseTest;
-import framework.Browser;
 import io.qameta.allure.Description;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import wildberries.pageObject.*;
-import static java.util.Currency.getInstance;
 
 public class E2ETest extends BaseTest {
 

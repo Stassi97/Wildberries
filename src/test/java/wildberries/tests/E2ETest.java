@@ -12,11 +12,10 @@ public class E2ETest extends BaseTest {
 
     @Test
     @Description("Wildberries E2ETest")
-    @Parameters({"headphones"})
 
-    public void e2eWildberries(String headphones) {
+    public void e2eWildberries() {
          WbPage wbPage = new WbPage();
-         wbPage.search(headphones);
+         wbPage.search("беспроводные наушники");
 
          ItemChoicePage choice = new ItemChoicePage();
          choice.chooseFilter();

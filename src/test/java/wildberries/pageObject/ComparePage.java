@@ -8,7 +8,7 @@ import org.testng.asserts.SoftAssert;
 
 public class ComparePage extends BasePage {
     SoftAssert softAssert = new SoftAssert();
-    private static final String PAGE_LOCATOR = "//div[@class='catalog__in container']";
+    private static final String PAGE_LOCATOR = "//div[@class='catalog__content']";
     private static final String ITEM_NAME = "//div[@class='product-card__title']";
     private static final String FILTER_ITEM_NAME = "//span[@class='chip__name' and text()='Наушники']";
     public ComparePage() {

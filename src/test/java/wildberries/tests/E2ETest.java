@@ -10,7 +10,7 @@ public class E2ETest extends BaseTest {
     @Test
     @Description("Wildberries E2ETest")
 
-    public void e2eWildberries() {
+    public void e2eWildberries() throws InterruptedException {
          WbPage wbPage = new WbPage();
          wbPage.search("беспроводные наушники");
 

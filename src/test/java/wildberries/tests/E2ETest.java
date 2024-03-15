@@ -19,6 +19,8 @@ public class E2ETest extends BaseTest {
 
          ItemChoicePage choice = new ItemChoicePage();
          choice.chooseFilter();
+         ComparePage compare = new ComparePage();
+         compare.compareProductItem();
          choice.productSelection();
          choice.clickOnProductItem();
 

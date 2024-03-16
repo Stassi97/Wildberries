@@ -1,6 +1,7 @@
 package wildberries.tests;
 
 import framework.BaseTest;
+import framework.Browser;
 import io.qameta.allure.Description;
 import org.testng.annotations.Test;
 import wildberries.pageObject.*;
@@ -10,12 +11,13 @@ public class E2ETest extends BaseTest {
     @Test
     @Description("Wildberries E2ETest")
 
-    public void e2eWildberries() throws InterruptedException {
+    public void e2eWildberries()  {
          WbPage wbPage = new WbPage();
          wbPage.search("беспроводные наушники");
 
          ItemChoicePage choice = new ItemChoicePage();
          choice.chooseFilter();
+         Browser.waitForPageLoad();
          ComparePage compare = new ComparePage();
          compare.compareProductItem();
          choice.productSelection();

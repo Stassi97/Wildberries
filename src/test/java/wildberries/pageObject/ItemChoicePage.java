@@ -15,7 +15,7 @@ import static framework.Browser.getDriver;
 
 public class ItemChoicePage extends BasePage {
 
-    private static final String PAGE_LOCATOR = "//div[@class='catalog']";
+    private static final String PAGE_LOCATOR = "//div[@class='card-grid']";
     private static final Button filters = new Button(By.xpath("//div[@class='filter-more']"));
     private static final CheckBox filtersChoice = new CheckBox(By.xpath("//span[@class='filter__item-in' and text()='Наушники']"));
     private static final Button closeFilters = new Button(By.xpath("//button[@class='filters-sidebar__close']"));

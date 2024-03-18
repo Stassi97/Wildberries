@@ -15,6 +15,6 @@ public class NewLocationTest extends BaseTest {
         headerPage.pickuppoint();
 
         NewPoint newPoint = new NewPoint();
-        newPoint.setNewPoint();
+        newPoint.setNewPoint("кальварийская");
     }
 }

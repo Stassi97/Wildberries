@@ -43,6 +43,11 @@ public class Browser {
     }
 
     public static void waitForPageLoad() {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         JavascriptExecutor executor = (JavascriptExecutor) driver;
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(PropertyReader.getIntProperty("page.load.timeout"))); //на протяжении 20сек обращается к документу и проверяет статус
         wait.until(driver -> executor.executeScript("return document.readyState").equals("complete")); //wait until явное ожидание

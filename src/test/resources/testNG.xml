@@ -5,6 +5,9 @@
     <test name="e2eWildberries">
         <classes>
             <class name ="wildberries.tests.E2ETest"/>
+            <class name ="wildberries.tests.CookieTest"/>
+            <class name ="wildberries.tests.NewCurrencyTest"/>
+            <class name ="wildberries.tests.NewLocationTest"/>
         </classes>
     </test>
 </suite>

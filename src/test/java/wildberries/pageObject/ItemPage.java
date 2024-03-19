@@ -12,7 +12,7 @@ public class ItemPage extends BasePage {
     private static final String PAGE_LOCATOR = "//div[@class='product-page']";
     private static final Button addToBascket = new Button(By.xpath("//div[@data-tag='productBasketButton']"));
     private static final Button addToFavorite = new Button(By.xpath("//button[@class='product__favourites']"));
-    private static final Button goToBascket = new Button(By.xpath("//div[@class='product__basket-button-wrapper']//button[@class='basket-button__button btn btn--new-secondary' and text()='В корзине']"));
+    private static final Button goToBascket = new Button(By.xpath("//*[@id=\"productSummaryDesktop\"]/div[2]/div[1]/div/button"));
 
     public ItemPage() {
         super(By.xpath(PAGE_LOCATOR), "Item Page");
